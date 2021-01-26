@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Playfair+Display:wght@600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans JP';
+    color: #fff;
 }
 
 body {
@@ -12,6 +17,15 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
 .header {
     width: 100%;
     max-width: 1920px;
@@ -20,6 +34,7 @@ body {
     overflow: hidden;
 }
 
+/*Header bg*/
 .header__bg {
     position: relative;
     width: 100%;
@@ -51,7 +66,8 @@ body {
     z-index: -1;
 }
 
-.header__bg img, .header__bg div {
+.header__bg img,
+.header__bg div {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,21 +85,21 @@ body {
     padding-top: 200px;
 }
 
-#hill img{
+#hill img {
     padding-top: 330px;
 }
 
 
 @media (max-width: 1440px) {
-    #sky{
+    #sky {
         margin-top: -100px;
     }
 
     #mountain img {
         padding-top: 150px;
     }
-    
-    #hill img{
+
+    #hill img {
         padding-top: 280px;
     }
 
@@ -94,20 +110,20 @@ body {
     .header__bg::before {
         height: 250px;
     }
-    
+
 }
 
 
 @media (max-width: 1200px) {
-    #sky{
+    #sky {
         margin-top: -200px;
     }
 
     #mountain img {
         padding-top: 120px;
     }
-    
-    #hill img{
+
+    #hill img {
         padding-top: 250px;
     }
 
@@ -118,19 +134,19 @@ body {
     .header__bg::before {
         height: 220px;
     }
-    
+
 }
 
 @media (max-width: 1000px) {
-    #sky{
+    #sky {
         margin-top: -200px;
     }
 
     #mountain img {
         padding-top: 120px;
     }
-    
-    #hill img{
+
+    #hill img {
         padding-top: 250px;
     }
 
@@ -141,18 +157,19 @@ body {
     .header__bg::before {
         height: 200px;
     }
-    
+
 }
 
 @media (max-width: 850px) {
-    #sky{
+    #sky {
         margin-top: -100px;
     }
+
     #mountain img {
         padding-top: 80px;
     }
-    
-    #hill img{
+
+    #hill img {
         padding-top: 250px;
     }
 
@@ -163,18 +180,19 @@ body {
     .header__bg::before {
         height: 150px;
     }
-    
+
 }
 
 @media (max-width: 650px) {
-    #sky{
+    #sky {
         margin-top: 0px;
     }
+
     #mountain img {
         padding-top: 30px;
     }
-    
-    #hill img{
+
+    #hill img {
         padding-top: 220px;
     }
 
@@ -186,5 +204,80 @@ body {
     .header__bg::before {
         height: 150px;
     }
+
+}
+
+/*Header inner*/
+
+.header_inner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1920px;
     
+    height: 100vh;
+    max-height: 1100px;
+    padding: 65px 80px;
+}
+
+.header__inner .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header__title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.header__top {
+    position: relative;
+    width: 100%;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.header__navigation,
+.header__account {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__navigation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__account {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__left {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+    top: 50%;
+}
+
+.header__left i {
+    margin-left: 24px;
+    transform: rotate(-90deg);
 }
