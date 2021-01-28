@@ -8,11 +8,11 @@
     font-family: 'Noto Sans JP';
     font-size: 18px;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 body {
     background: #0B1D26;
-    min-height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,13 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:hover,
+a:hover i,
+a:hover div {
+    color: #FBD784;
+    border-color: #F8D784;
 }
 
 li {
@@ -104,7 +111,7 @@ li {
     max-height: 1100px;
     min-height: 500px;
     padding: 65px 80px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
 }
 
 .header__inner .content {
@@ -119,7 +126,7 @@ li {
     top: 50%;
     left: 50%;
     padding-top: 100px;
-   
+
 }
 
 .header__top {
@@ -171,6 +178,7 @@ li {
     width: 24px;
     height: 24px;
     border: 3px solid #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
     border-radius: 50%;
     padding-left: 2.5px;
     padding-top: 3px;
@@ -214,7 +222,7 @@ li {
     transform: translate(-104px, -50%);
 }
 
-.header__title h1{
+.header__title h1 {
     font-family: 'Playfair Display';
     font-size: 60px;
     margin-top: 32px;
@@ -224,15 +232,66 @@ li {
     text-transform: capitalize;
 }
 
-.title__bottom{
+.title__bottom {
     display: flex;
     align-items: center;
 }
 
-.title__bottom div{
+.title__bottom div {
     margin-right: 16px;
 }
 
-.title__bottom i{
+.title__bottom i {
     margin-top: 7px;
+}
+
+/*footer*/
+.footer__right {
+    display: flex;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 212px;
+}
+
+.col__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #FBD784;
+}
+
+.col__item {
+    font-size: 18px;
+    line-height: 42px;
+}
+
+.footer__left {
+    height: inherit;
+    position: relative;
+}
+
+.left__bottom {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1920px;
+    padding: 120px 229px;
+}
+
+.footer .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    margin-bottom: 24px;
 }
