@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans JP';
+    font-size: 18px;
     color: #fff;
 }
 
@@ -90,122 +91,6 @@ li {
 }
 
 
-@media (max-width: 1440px) {
-    #sky {
-        margin-top: -100px;
-    }
-
-    #mountain img {
-        padding-top: 150px;
-    }
-
-    #hill img {
-        padding-top: 280px;
-    }
-
-    .header {
-        max-height: 800px;
-    }
-
-    .header__bg::before {
-        height: 250px;
-    }
-
-}
-
-
-@media (max-width: 1200px) {
-    #sky {
-        margin-top: -200px;
-    }
-
-    #mountain img {
-        padding-top: 120px;
-    }
-
-    #hill img {
-        padding-top: 250px;
-    }
-
-    .header {
-        max-height: 700px;
-    }
-
-    .header__bg::before {
-        height: 220px;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    #sky {
-        margin-top: -200px;
-    }
-
-    #mountain img {
-        padding-top: 120px;
-    }
-
-    #hill img {
-        padding-top: 250px;
-    }
-
-    .header {
-        max-height: 650px;
-    }
-
-    .header__bg::before {
-        height: 200px;
-    }
-
-}
-
-@media (max-width: 850px) {
-    #sky {
-        margin-top: -100px;
-    }
-
-    #mountain img {
-        padding-top: 80px;
-    }
-
-    #hill img {
-        padding-top: 250px;
-    }
-
-    .header {
-        max-height: 600px;
-    }
-
-    .header__bg::before {
-        height: 150px;
-    }
-
-}
-
-@media (max-width: 650px) {
-    #sky {
-        margin-top: 0px;
-    }
-
-    #mountain img {
-        padding-top: 30px;
-    }
-
-    #hill img {
-        padding-top: 220px;
-    }
-
-    .header {
-        max-height: 600px;
-        min-width: 650px;
-    }
-
-    .header__bg::before {
-        height: 150px;
-    }
-
-}
 
 /*Header inner*/
 
@@ -214,9 +99,10 @@ li {
     top: 0;
     width: 100%;
     max-width: 1920px;
-    
+
     height: 100vh;
     max-height: 1100px;
+    min-height: 500px;
     padding: 65px 80px;
 }
 
@@ -231,6 +117,7 @@ li {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    padding-top: 100px;
 }
 
 .header__top {
@@ -255,6 +142,11 @@ li {
     left: 0;
 }
 
+.logo {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+}
+
 .header__navigation {
     position: absolute;
     top: 0;
@@ -262,10 +154,28 @@ li {
     transform: translateX(-50%);
 }
 
+.header__navigation li:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .header__account {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.header__account i {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding-left: 2.5px;
+    padding-top: 3px;
+}
+
+.header__account div {
+    margin-left: 8px;
 }
 
 .header__left {
@@ -280,4 +190,47 @@ li {
 .header__left i {
     margin-left: 24px;
     transform: rotate(-90deg);
+}
+
+.title__top {
+    color: #FBD784;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-left: 104px;
+
+    position: relative;
+}
+
+.title__top::before {
+    content: '';
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+    position: absolute;
+    top: 50%;
+    transform: translate(-104px, -50%);
+}
+
+.header__title h1{
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 700px;
+    line-height: 70px;
+    text-transform: capitalize;
+}
+
+.title__bottom{
+    display: flex;
+    align-items: center;
+}
+
+.title__bottom div{
+    margin-right: 16px;
+}
+
+.title__bottom i{
+    margin-top: 7px;
 }

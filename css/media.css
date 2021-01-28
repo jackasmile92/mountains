@@ -1,0 +1,125 @@
+@media (max-width: 1440px) {
+    #sky {
+        margin-top: -100px;
+    }
+
+    #mountain img {
+        padding-top: 150px;
+    }
+
+    #hill img {
+        padding-top: 280px;
+    }
+
+    .header {
+        max-height: 800px;
+    }
+
+    
+    .header_inner {
+        max-height: 800px;
+    }
+
+    .header__bg::before {
+        height: 250px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    #sky {
+        margin-top: -200px;
+    }
+
+    #mountain img {
+        padding-top: 120px;
+    }
+
+    #hill img {
+        padding-top: 250px;
+    }
+
+    .header {
+        max-height: 700px;
+    }
+
+    .header_inner {
+        max-height: 700px;
+    }
+
+    .header__bg::before {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #sky {
+        margin-top: -200px;
+    }
+
+    #mountain img {
+        padding-top: 120px;
+    }
+
+    #hill img {
+        padding-top: 250px;
+    }
+
+    .header {
+        max-height: 650px;
+    }
+
+    .header__bg::before {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    #sky {
+        margin-top: -100px;
+    }
+
+    #mountain img {
+        padding-top: 80px;
+    }
+
+    #hill img {
+        padding-top: 250px;
+    }
+
+    .header {
+        max-height: 600px;
+    }
+
+    .header__bg::before {
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    #sky {
+        margin-top: 0px;
+    }
+
+    #mountain img {
+        padding-top: 30px;
+    }
+
+    #hill img {
+        padding-top: 220px;
+    }
+
+    .header {
+        max-height: 600px;
+        min-width: 650px;
+    }
+
+    .header__bg::before {
+        height: 150px;
+    }
+
+}
