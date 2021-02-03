@@ -7,16 +7,15 @@
     <title>MNTN</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <section class="slider">
 
-    </section>
-    <header class="header">
+    <header class="header" id="start">
         <section class="header__bg">
             <img src="./img/sky.png" alt="" id="sky">
             <div id="mountain"><img src="./img/mountains.png" alt=""></div>
@@ -54,9 +53,10 @@
             </div>
         </section>
     </header>
-
+    <div id="item01"></div>
     <section class="main">
         <div class="container">
+
             <div class="main__item">
                 <div class="item__text">
                     <div class="item__title">
@@ -72,13 +72,16 @@
                             <div>
                                 <div>read more</div>
                                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                            </div>   </a>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="item__pic">
                     <img src="./img/01.png" alt="">
                 </div>
+
             </div>
+            <div id="item02"></div>
             <div class="main__item">
                 <div class="item__text">
                     <div class="item__title">
@@ -102,6 +105,7 @@
                     <img src="./img/02.png" alt="">
                 </div>
             </div>
+            <div id="item03"></div>
             <div class="main__item">
                 <div class="item__text">
                     <div class="item__title">
@@ -118,7 +122,7 @@
                                 <div>read more</div>
                                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </div>
-                         </a>
+                        </a>
                     </div>
                 </div>
                 <div class="item__pic">
@@ -127,6 +131,8 @@
             </div>
         </div>
     </section>
+
+
 
 
     <footer class="footer">
@@ -160,8 +166,33 @@
             </div>
         </div>
     </footer>
+    <!-- https://www.youtube.com/watch?v=cL_dytFgasA -->
+
+    <div id="scrollpath">
+        <div id="progressbar"></div>
+        <div class="navpath">
+            <a class="navpath__item" href="./index.html#start">Start</a>
+            <a class="navpath__item" href="./index.html#item01">01</a>
+            <a class="navpath__item" href="./index.html#item02">02</a>
+            <a class="navpath__item" href="./index.html#item03">03</a>
+        </div>
+    </div>
 
     <script src="./js/parallax.js"></script>
+    <!-- don't touch scrollbar!-->
+    <script type="text/javascript">
+        var progressbar = document.getElementById("progressbar");
+        var percent = document.getElementById("percent");
+        var scrollbar = document.getElementById("scrollpath");
+
+
+        var totalHeight = document.body.offsetHeight - window.innerHeight;
+        window.onscroll = function () {
+            var progress = (window.pageYOffset / totalHeight) * 100 + 10;
+            progressbar.style.height = progress + "%";
+        }
+
+    </script>
 </body>
 
 </html>

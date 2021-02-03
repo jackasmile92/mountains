@@ -1,0 +1,41 @@
+#scrollpath {
+    z-index: 100;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 80px;
+    width: 3px;
+    height: 240px;
+    background: rgba(255,255,255, .5);
+    
+}
+
+#progressbar {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 24px;
+    background: #FFFFFF;
+    max-height: 240px;
+}
+
+
+#progressbar:after {
+    filter: blur(30px);
+}
+
+.navpath{
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    z-index: 101;
+    position: fixed;
+    left: -70px;
+    align-items: flex-end;
+}
