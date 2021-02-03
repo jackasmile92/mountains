@@ -247,12 +247,14 @@ li {
 /*footer*/
 .footer__right {
     display: flex;
+    justify-content: space-between;
+    width: 450px;
 }
 
 .footer__col {
     display: flex;
     flex-direction: column;
-    margin-left: 212px;
+    width:200px;
 }
 
 .col__title {
@@ -270,6 +272,7 @@ li {
 .footer__left {
     height: inherit;
     position: relative;
+    width: 300px;
 }
 
 .left__bottom {
@@ -319,11 +322,8 @@ li {
     margin-top: 150px;
 }
 
-.main__item:nth-child(2n){
-    flex-direction: row-reverse;
-}
 
-.main__item:nth-child(2n) .item__pic{
+.main__item.reverse .item__pic{
     margin-left: 0;
     margin-right: 50px;
 }
